@@ -7,7 +7,7 @@ Red social basica =
 -Likear fotos y comentar en ellas
 -Borrar publicacion 
 
-<!-- agregar mas acciones a futuro -->
+<!--  agregar mas acciones a futuro -->
 # BD MySQL
 
 -- phpMyAdmin SQL
