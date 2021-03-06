@@ -5,7 +5,7 @@
 {{-- Agregar Contenido --}}
 @section('content')
 
-<h1>Configuracion de la cuenta</h1>
+
 {{-- Generar container para el contenido --}}
 <div class="container">
     {{-- una fila con contenido centrado --}}

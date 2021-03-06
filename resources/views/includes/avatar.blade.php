@@ -1,6 +1,5 @@
 {{-- Avatar --}}
-@if (Auth::user()->image)
 <div class="container-avatar">
+    {{-- {{$user->id}} --}}
     <img src="{{ route('user.avatar', Auth::user()->image) }}" class="avatar" >
-</div>
-@endif
+</div>    

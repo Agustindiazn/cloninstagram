@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+{{-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> --}}
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +14,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    {{-- Jquery --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- Pusher --}}
+    <script src="https://js.pusher.com/5.0/pusher.min.js"></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -25,6 +32,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <span class ='my_id' id='{{ Auth::user()->id}}'></span>
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Lara Foto
@@ -63,6 +71,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('user.users') }}">Buscar gente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('chat.chats') }}">Mensajes</a>
                         </li>
                         <li>
                             &nbsp;

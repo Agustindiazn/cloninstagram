@@ -14,6 +14,7 @@
 // llamar al modelo
 // use App\Image;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -64,3 +65,8 @@ Route::post('/imagen/update','ImageController@update')      ->name('image.update
 Route::get('/like/{image_id}','LikeController@like')    ->name('like.save');
 Route::get('/dislike/{image_id}','LikeController@dislike')->name('like.delete');
 Route::get('/likes','LikeController@likes')             ->name('like.likes');
+
+// chat
+Route::get('/chats','ChatController@chats')             ->name('chat.chats');
+Route::get('/chats/{id}','ChatController@getChat')         ->name('chat.getChat');
+Route::post('/chats','ChatController@sendMessage')         ->name('chat.sendMenssage');

@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
-<h1>Configuracion de la cuenta</h1>
+
 
 <div class="container">
     

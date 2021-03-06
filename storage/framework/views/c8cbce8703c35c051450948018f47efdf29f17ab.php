@@ -1,7 +1,7 @@
 <?php $__env->startSection('content'); ?>
 
 
-
+<span id='<?php echo e($user); ?>'></span>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -25,8 +25,6 @@
 
             </div>
         </div>
-
-    
     </div>
 </div>
 <?php $__env->stopSection(); ?>
